@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useGetLeetCodeProfileQuery } from "./postApi";
+import Contest from "../../components/Contest";
 
 export default function PostsList() {
   const [inputData, setInputData] = useState({
@@ -83,6 +84,8 @@ export default function PostsList() {
       ) : (
         ""
       )}
+
+      <Contest submitData={submitData}/>
     </div>
   );
 }
