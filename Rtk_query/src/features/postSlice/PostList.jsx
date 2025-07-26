@@ -49,7 +49,7 @@ export default function PostsList() {
           <span className="loading loading-bars loading-lg text-blue-600"></span>
           <span className="loading loading-bars loading-xl text-blue-600"></span>
         </div>
-      ) : (data || !data ) ? (
+      ) : (data ) ? (
         <div className="p-6 rounded-lg  bg-gradient-to-tr from-gray-700 to-gray-800 shadow-lg flex flex-col gap-6 items-center max-w-2xl w-full  ">
           <div className="text-center">
             <p className=" text-4xl  font-extrabold p-3 bg-clip-text text-transparent bg-gradient-to-r from-white to-blue-500">
